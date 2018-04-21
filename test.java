@@ -34,6 +34,12 @@ public class test {
 	public Block MakeBlock(Node nd1) 
 	{
 		Block temp=new Block();
+		if(BlockList.size()!=0)
+		{
+		Game g1=new Game(BlockList.getLast());
+		System.out.println("Mining...");
+		while(g1.start()==false){	}
+		}
 		if(BlockList.size()==0)
 			temp.SetPreviousblockhash("0");
 		else
